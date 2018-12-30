@@ -1,3 +1,6 @@
+<!-- Database -->
+<?php require "includes/server.php"?>
+
 <!-- Place to header section -->
 <?php require "includes/header.php" ?>
 
@@ -7,8 +10,17 @@
         <?php require "includes/navbar.php"?> 
 
         <div class="overlay-header">
+            <!-- Section for errors that will be back from server -->
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <!-- if there are errors -->
+                            <?php include "includes/errors.php" ?>
+                        </div>
+                    </div>
+                </div>
             <!-- Content for this page : form to login   -->
-                <form action="profile.php" method="POST" class="form-sec">
+                <form action="signup.php" method="POST" class="form-sec" id="signup">
                     <div class="container form-container">
                         <div class="row">
                             <div class="col-md-5">
@@ -19,9 +31,9 @@
                                         <div class="icon-item">
                                             <i class="fa fa-user"></i>
                                         </div>
-                                        <input class="input-item name-inp" type="text" name="name" placeholder="name..">
-                                    </div>
-                                    
+                                        <input class="input-item name-inp" type="text" name="name" placeholder="fullname..">
+                                    </div>          
+                                                              
                                     <div class="item-signup">
                                         <div class="icon-item">
                                             <i class="fa fa-user"></i>
@@ -50,12 +62,13 @@
                                         <input class="input-item pwd-confirm--input" type="password" name="confirm-password" placeholder="confirm password..">
                                     </div>
 
-                                    <label class="buttons-form">
-                                        <input type="checkbox" name="remember-me">  remember me
-                                    </label>
+                                    <p clas="buttons-form">
+                                        Already have an account? | <a href="index.php">login</a>
+                                    </p>
+
 
                                     <div class="item-submit">
-                                        <input type="submit" value="Signup">
+                                        <input type="submit" value="Signup" name="signup_user">
                                     </div>                                   
                                 </div>
                             </div>

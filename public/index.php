@@ -1,3 +1,6 @@
+<!-- Database -->
+<?php require "includes/server.php"?>
+
 <!-- Place to header section -->
 <?php require "includes/header.php" ?>
 
@@ -8,8 +11,17 @@
         <?php require "includes/navbar.php"?> 
 
         <div class="overlay-header">
+              <!-- Section for errors that will be back from server -->
+              <div class="container">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <!-- if there are errors -->
+                            <?php include "includes/errors.php" ?>
+                        </div>
+                    </div>
+                </div>
             <!-- Content for this page : form to login   -->
-            <form action="profile.php" method="POST" class="form-sec">
+            <form action="index.php" method="POST" class="form-sec" id="login">
                 <div class="container form-container">
                     <div class="row">
                         <div class="col-md-3 ">
@@ -38,8 +50,12 @@
                                     <input type="checkbox" name="remember-me">  remember me
                                 </label>
 
+                                <p clas="buttons-form">
+                                    Don't have an account? | <a href="signup.php">Signup</a>
+                                </p>
+
                                 <div class="item-submit">
-                                    <input type="submit" value="login">
+                                    <input class="sub" type="submit" value="login" name="login_user">
                                 </div>
                         
                         

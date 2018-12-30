@@ -1,3 +1,28 @@
+<?php 
+session_start();
+if(!isset($_SESSION['username'])) {
+    $_SESSION['msg'] = "you must log in first" ;
+    header('location: index.php');
+    $href = "index.php";
+    $log = "login";
+} 
+else {
+    $href = "?logout" ;
+    $log = "logout";
+}
+
+if (isset($_GET['logout'])) {
+
+    session_destroy();
+    unset($_SESSION['username']);
+    header("location: index.php");
+}
+?>
+
+<!-- Database -->
+<?php require "includes/db.inc.php"?>
+
+
 <!-- Place to header.php -->
 <?php require "includes/header.php" ?>
 <body>
@@ -21,7 +46,7 @@
                                         <h3>name :</h3>
                                     </div>    
                                     <div class="info-profile">
-                                        <input type="text" name="show-name">
+                                        <input type="text" name="show-name" value=<?php echo $_SESSION['name']?> >
                                     </div>                               
                                 </div>
                                 <div class="profile-item">
@@ -29,9 +54,10 @@
                                         <h3>email :</h3>
                                     </div>    
                                     <div class="info-profile">
-                                        <input type="text"  name="show-email">
+                                        <input type="text"  name="show-email" value=<?php  echo $_SESSION['mail'] ?>> 
                                     </div>                               
                                 </div>
+
                             </div>
                         </div>
                     </div>

@@ -1,5 +1,6 @@
 $primaryColor : #129CF3 ;
 $secondryColor : #fff;
+$linkColor : #007bff ;
 
 @mixin main_font {
     font-family: 'Raleway', sans-serif;
@@ -20,6 +21,7 @@ $secondryColor : #fff;
 body {
     overflow-x: hidden;
     overflow-y: scroll;
+    @include main_font() ;
 }
 
 * {
@@ -46,4 +48,11 @@ input::placeholder {
 .row {
     justify-content: center;
 }
-  
+
+a {
+    color : $linkColor ;
+}
+
+p {
+    margin : 0 ;
+}

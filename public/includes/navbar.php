@@ -10,7 +10,7 @@
         <a class="nav-link" href="index.php">Home   </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="index.php">Login</a>
+        <a class="nav-link" href="<?php echo $href ?>"><?php echo $log ?></a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="signup.php">Signup</a>

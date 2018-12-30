@@ -12,7 +12,7 @@
     background-position : 50% 50% ;
     background-repeat: no-repeat;
     background-size: cover ;
-    height: 100vh ;
+    height: 200vh ;
     width : 100vw; 
 
 }
@@ -44,7 +44,7 @@
 
 /*______Form sec_______- */
 .form-sec {
-    padding-top : 10rem;
+    padding-top : 9rem;
     @include main_font;
     color: $secondryColor;
 }
@@ -104,6 +104,7 @@
     color : $secondryColor;
     letter-spacing: 1px;
     padding : 5px 25px;
+    margin-top: 20px;
 }
 .item-submit input:hover {
     background-color : #094970;
@@ -155,3 +156,12 @@
 
 
 
+
+/* sections for errors  */ 
+.errors {
+    padding-top : 4.5rem;
+    color : $secondryColor ;
+    text-align: center;
+    border-bottom : 1px solid grey;
+    display: block;
+}
