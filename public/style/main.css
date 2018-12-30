@@ -1,0 +1,145 @@
+/* styling Groups */
+body {
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+input {
+  outline: none;
+  border: none;
+  background: none;
+  padding-left: 5px;
+  color: #fff;
+}
+
+input:focus {
+  outline: none;
+}
+
+input::-webkit-input-placeholder {
+  color: #fff;
+}
+
+input:-ms-input-placeholder {
+  color: #fff;
+}
+
+input::-ms-input-placeholder {
+  color: #fff;
+}
+
+input::placeholder {
+  color: #fff;
+}
+
+.row {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.input-item {
+  min-height: 30px;
+  width: 100%;
+}
+
+#header-sec {
+  background-image: url("../images/header-bg.jpg");
+  background-attachment: fixed;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+}
+
+.overlay-header {
+  width: 100%;
+  height: 100%;
+  background-color: #000000b0;
+}
+
+/*_____-Navbar______*/
+.navbar-sec {
+  background-color: transparent !important;
+  border: 1px solid #3b3b3bb0;
+}
+
+.navbar-brand {
+  color: #129CF3 !important;
+}
+
+.nav-link {
+  color: #129CF3 !important;
+}
+
+.nav-link:hover {
+  color: #114b6e !important;
+}
+
+/*______Form sec_______- */
+#form-sec {
+  padding-top: 10rem;
+  font-family: 'Raleway', sans-serif;
+  color: #fff;
+}
+
+.login-form {
+  text-align: center;
+}
+
+.img-user {
+  padding-bottom: 2rem;
+}
+
+.item-login {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  border: 1px solid #535353;
+  margin-bottom: 1rem;
+}
+
+.buttons-form {
+  width: 100%;
+  text-align: left;
+}
+
+.icon-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-width: 50px;
+  background-color: rgba(58, 58, 58, 0.856);
+  color: #129CF3;
+}
+
+.item-submit input {
+  cursor: pointer;
+  background-color: #129cf3;
+  color: #fff;
+  letter-spacing: 1px;
+  padding: 5px 25px;
+}
+
+.item-submit input:hover {
+  background-color: #094970;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
