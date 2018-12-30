@@ -43,11 +43,13 @@
 }
 
 /*______Form sec_______- */
-#form-sec {
+.form-sec {
     padding-top : 10rem;
     @include main_font;
     color: $secondryColor;
 }
+
+/*___Login part___ */
 
 .login-form{
     text-align: center;
@@ -64,6 +66,22 @@
     border: 1px solid rgb(83, 83, 83);
     margin-bottom : 1rem;
 }
+
+/*___Signup Part___ */
+
+.signup-form {
+    text-align: center;
+}
+
+.item-signup {
+    display: flex ;
+    justify-content: center;
+    align-content: center;
+    border: 1px solid rgb(83, 83, 83);
+    margin-bottom : 1.5rem;
+}
+
+/* Signup and login stlying */
 
 .buttons-form {
     width: 100%;
@@ -91,3 +109,5 @@
     background-color : #094970;
     @include main_transition;
 }
+
+

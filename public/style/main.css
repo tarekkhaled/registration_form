@@ -83,12 +83,13 @@ input::placeholder {
 }
 
 /*______Form sec_______- */
-#form-sec {
+.form-sec {
   padding-top: 10rem;
   font-family: 'Raleway', sans-serif;
   color: #fff;
 }
 
+/*___Login part___ */
 .login-form {
   text-align: center;
 }
@@ -110,6 +111,25 @@ input::placeholder {
   margin-bottom: 1rem;
 }
 
+/*___Signup Part___ */
+.signup-form {
+  text-align: center;
+}
+
+.item-signup {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  border: 1px solid #535353;
+  margin-bottom: 1.5rem;
+}
+
+/* Signup and login stlying */
 .buttons-form {
   width: 100%;
   text-align: left;
