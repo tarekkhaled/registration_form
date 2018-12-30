@@ -163,3 +163,55 @@ input::placeholder {
   -webkit-transition: all .5s ease-in-out;
   transition: all .5s ease-in-out;
 }
+
+/*___Profile System_____ */
+.profile-header {
+  padding-top: 8rem;
+  font-family: 'Raleway', sans-serif;
+  color: #fff;
+}
+
+.profile-row {
+  border: 1px solid #129CF3;
+}
+
+.img-profile {
+  border-right: 1px solid #129CF3;
+}
+
+.img-profile img {
+  border-radius: 50%;
+  width: 100%;
+}
+
+.profile-item {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: 'left right';
+  margin-bottom: 1rem;
+}
+
+.headers-profile {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: left;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 7;
+  grid-column: 1/8;
+}
+
+.info-profile {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: right;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 6;
+  grid-column: 2/8;
+}
+
+.info-profile input {
+  height: 100%;
+  width: 100%;
+  background: transparent;
+  border: 1px solid #fff;
+}

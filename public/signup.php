@@ -14,18 +14,26 @@
                             <div class="col-md-5">
                                 <div class='signup-form'>   
                                     <!-- part of inputs -->
+
                                     <div class="item-signup">
                                         <div class="icon-item">
                                             <i class="fa fa-user"></i>
                                         </div>
-                                        <input class="input-item pwd-input" type="text" name="username" placeholder="username..">
+                                        <input class="input-item name-inp" type="text" name="name" placeholder="name..">
+                                    </div>
+                                    
+                                    <div class="item-signup">
+                                        <div class="icon-item">
+                                            <i class="fa fa-user"></i>
+                                        </div>
+                                        <input class="input-item username-inp" type="text" name="username" placeholder="username..">
                                     </div>
 
                                     <div class="item-signup">
                                         <div class="icon-item">
                                             <i class="fa fa-envelope"></i>
                                         </div>
-                                        <input class="input-item pwd-input" type="text" name="email" placeholder="e-mail..">
+                                        <input class="input-item email-inp" type="text" name="email" placeholder="e-mail..">
                                     </div>
 
                                     <div class="item-signup">
@@ -39,7 +47,7 @@
                                         <div class="icon-item">
                                             <i class="fa fa-unlock-alt"></i>
                                         </div>
-                                        <input class="input-item pwd-input" type="password" name="confirm-password" placeholder="confirm password..">
+                                        <input class="input-item pwd-confirm--input" type="password" name="confirm-password" placeholder="confirm password..">
                                     </div>
 
                                     <label class="buttons-form">

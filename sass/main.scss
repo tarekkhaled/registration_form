@@ -110,4 +110,48 @@
     @include main_transition;
 }
 
+/*___Profile System_____ */
+.profile-header {
+
+    padding-top : 8rem;
+    @include main_font;
+    color: $secondryColor;
+
+}
+
+.profile-row {
+    border : 1px solid $primaryColor;
+}
+
+.img-profile {
+    border-right: 1px solid $primaryColor;
+}
+.img-profile img {
+    border-radius: 50%;
+    width : 100%;
+}
+
+.profile-item {
+    display: grid;
+    grid-template-areas: 'left right' ;
+    margin-bottom: 1rem;
+}
+
+.headers-profile {
+    grid-area: left ;
+    grid-column: 1/8 ;
+}
+.info-profile {
+    grid-area : right ;
+    grid-column: 2/8 ;
+}
+.info-profile input {
+    height:  100% ;
+    width : 100%;
+    background: transparent ;
+    border : 1px solid $secondryColor ;
+
+}
+
+
 
